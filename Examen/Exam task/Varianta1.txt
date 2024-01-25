@@ -1,0 +1,7 @@
+Profesorii au mai multe materii. Materiile au mai multi profesori. 
+Profesorii pot fi standard sau laboranti. Creati endpointurile necesare pentru a afisa materiile,
+profesorii si a adauga profesorii, materiile si pentru a asigna materiile profesorilor. 
+Se va folosi implementarea code first (modele + aplicat migrarii), net. 
+Pentru frontend se  va folosi angular sau react. Requesturile se vor face in service care vor 
+fi folosite in componente. Pentru react folositi hooks, redux etc. Pentru modele adaugati ce 
+proprietati vreti voi.
