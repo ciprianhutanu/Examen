@@ -69,7 +69,7 @@ namespace Examen.Controllers
             {
                 return BadRequest("Profesor does not exist");
             }
-
+        
             Materie matById = await _examContext.Materii.FirstOrDefaultAsync(mat => mat.Id.Equals(relation.MatId));
             if(matById == null)
             {
@@ -80,10 +80,11 @@ namespace Examen.Controllers
                 ProfId = relation.ProfId,
                 MatId = relation.MatId
             };
+           
             await _examContext.AddAsync(NewRelation);
             await _examContext.SaveChangesAsync();
-
-            return Ok(NewRelation);
+            bool ok = true;
+            return Ok(ok);
         }
     }
 }
